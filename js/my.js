@@ -77,7 +77,7 @@ $(function() {
         'transform-origin': '0 0'
       })
       var $targeth = $($target).height();
-      var centeredtopdistance = ((($wh - $targeth) / 2) - topdistance)
+      var centeredtopdistance = ((($wh - $targeth) / 2) - distance)
       $($target).css({
         'transform': 'translate(' + centeredleftdistance + 'px, -' + topdistance + 'px) scale(' + scalefactor + ')',
         'transform-origin': '0 0'
@@ -95,7 +95,7 @@ $(function() {
       var $targetw = $($target).width();
       var centeredleftdistance = ((($ww - $targetw) / 2) - leftdistance)
       $($target).css({
-        'transform': 'translate(' + centeredtopdistance + 'px, -' + leftdistance + 'px) scale(' + scalefactor + ')',
+        'transform': 'translate(' + centeredleftdistance + 'px, -' + topdistance + 'px) scale(' + scalefactor + ')',
         'transform-origin': '0 0'
       })
     }
